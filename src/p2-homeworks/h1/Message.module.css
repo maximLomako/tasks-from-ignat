@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.messageWrapper {
+    background: navajowhite;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.messageDialogWindow {
+    position: relative;
+    background: #CF5858;
+    border-radius: 10px;
+    background: thistle;
+    max-width: 200px;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+.messageDialogWindow:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 20px 20px 20px 0;
+    border-color: transparent thistle;
+    display: block;
+    width: 0;
+    z-index: 1;
+    left: -20px;
+    top: 15px;
+}
+
+.messageAvatar {
+    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid yellow;
+    background: orchid;
+    padding: 3px;
+}
+
+.messageDialogWindow {
+    position: relative;
+    background: thistle;
+    max-width: 200px;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+.messageName {
+    font-family: sans-serif;
+    color: cornflowerblue;
+    font-weight: 700;
+}
+
+.messageText {
+    color: #ffff;
+
+}
+
+.messageTime {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+    color: lightcoral;
+
+}
+
+
+
+
