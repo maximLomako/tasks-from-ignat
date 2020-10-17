@@ -16,11 +16,11 @@ const Greeting: React.FC<GreetingPropsType> = (
     const inputClass = error ? s.error : ''; // need to fix with (?:)
 
     return (
-        <div>
-            <input value={name} onChange={setNameCallback} className={inputClass}/>
+        <div className={s.greeting}>
+            <input value={name} onChange={setNameCallback} className={`${inputClass} ${s.superInputStyle}`}/>
             <span>{error}</span>
-            <button onClick={addUser}>add</button>
-            <span>{totalUsers}</span>
+            <button className={s.btn} onClick={addUser}>add</button>
+            <span className={s.counter}>{totalUsers}</span>
         </div>
     );
 }

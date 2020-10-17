@@ -28,6 +28,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> =
         addUserCallback(name);
         setName('');
         setError('');
+        alert(`Hello, ${name}`)
       } else {
         setError('Title is required')
       }
