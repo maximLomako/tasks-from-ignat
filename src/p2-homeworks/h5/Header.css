@@ -1,0 +1,52 @@
+.header {
+    background: cornflowerblue;
+    height: 30px;
+    font-weight: bold;
+    font-size: 24px;
+
+}
+
+.header nav ul {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navlink {
+    text-decoration: none;
+    cursor: pointer;
+    color: mediumvioletred;
+    transition: color 1s;
+}
+
+.navlink:hover {
+    color: goldenrod;
+    transition: color .5s;
+}
+
+.error {
+    background: lightcoral;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error__num {
+    font-size: 56px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.error__text {
+    color: #012880;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.error__cat {
+    color: gold;
+    font-size: 28px;
+}

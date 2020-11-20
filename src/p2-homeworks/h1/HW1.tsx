@@ -3,10 +3,10 @@ import Message from "./Message";
 
 
 const messageData1 = {
-    avatar: "https://www.clipartmax.com/png/full/466-4663678_owls-‿✿⁀°••○-subject-adorable-owl-cute-owl-svg.png",
-    name: "Ignat",
-    message: "Hello, Dear Friend !",
-    time: "12:15",
+  avatar: "https://www.clipartmax.com/png/full/466-4663678_owls-‿✿⁀°••○-subject-adorable-owl-cute-owl-svg.png",
+  name: "Ignat",
+  message: "Hello, Dear Friend !",
+  time: "12:15",
 };
 
 const messageData2 = {
@@ -18,31 +18,31 @@ const messageData2 = {
 
 
 function HW1() {
-    return (
-        <div>
-            <hr/>
-            homeworks 1
+  return (
+    <div>
+      <hr/>
+      homeworks 1
 
-            <Message
-                avatar={messageData1.avatar}
-                name={messageData1.name}
-                message={messageData1.message}
-                time={messageData1.time}
-            />
+      <Message
+        avatar={messageData1.avatar}
+        name={messageData1.name}
+        message={messageData1.message}
+        time={messageData1.time}
+      />
 
-          <Message
-            avatar={messageData2.avatar}
-            name={messageData2.name}
-            message={messageData2.message}
-            time={messageData2.time}
-          />
+      <Message
+        avatar={messageData2.avatar}
+        name={messageData2.name}
+        message={messageData2.message}
+        time={messageData2.time}
+      />
 
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeMessage/>*/}
-            <hr/>
-        </div>
-    );
+      <hr/>
+      {/*для личного творчества, могу проверить*/}
+      {/*<AlternativeMessage/>*/}
+      <hr/>
+    </div>
+  );
 }
 
 export default HW1;
