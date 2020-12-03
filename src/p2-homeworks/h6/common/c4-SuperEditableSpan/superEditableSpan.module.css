@@ -1,0 +1,8 @@
+.spanStyle{
+    display: block;
+    border: 5px solid green;
+    background: thistle;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 50%;
+}

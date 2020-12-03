@@ -7,7 +7,6 @@ import HW9 from "../../h9/HW9";
 function Junior() {
   return (
     <div>
-      <HW6/>
       <HW7/>
       <HW8/>
       <HW9/>
