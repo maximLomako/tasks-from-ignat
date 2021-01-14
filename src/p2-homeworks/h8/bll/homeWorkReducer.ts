@@ -7,7 +7,7 @@ export const AGE_LIMIT = 18;
 export type ActionsTypes = ReturnType<typeof sortAC>
   | ReturnType<typeof checkAC>
 
-export const homeWorkReducer = (state: Array<InitialPeopleType>, action: ActionsTypes): any => {
+export const homeWorkReducer = (state: Array<InitialPeopleType>, action: ActionsTypes): Array<InitialPeopleType> => {
   switch (action.type) {
     case "sort": {
       const sortedState = [...state];
