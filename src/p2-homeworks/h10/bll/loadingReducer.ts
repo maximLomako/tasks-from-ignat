@@ -9,7 +9,7 @@ const initState = {
   loading: true
 };
 
-export const loadingReducer = (state = initState, action: ActionType) => {
+export const loadingReducer = (state = initState, action: ActionType): typeof initState => {
   switch (action.type) {
     case TOGGLE_LOADING: {
       return {
