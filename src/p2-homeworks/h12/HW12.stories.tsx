@@ -1,20 +1,24 @@
-import React, {useState} from "react";
+import React, {useState} from 'react';
+import HW12 from "./HW12";
 import s from "./HW12.module.css";
-import SuperRadio from "../h7/common/c6-SuperRadio/SuperRadio";
 import SuperSelect from "../h7/common/c5-SuperSelect/SuperSelect";
-import {useDispatch, useSelector} from "react-redux";
-import {changeThemeC} from "./bll/themeReducer";
+import SuperRadio from "../h7/common/c6-SuperRadio/SuperRadio";
+
+export default {
+  title: 'Example/HW12',
+  component: HW12,
+}
 
 const themes = ['dark', 'red', 'some'];
 
-function HW12() {
-  const dispatch = useDispatch();
-  const theme = useSelector<any, any>(state => state.themeState.theme);
+export const ExampleHW12 = () => {
+  const [state, setState] = useState('some')
+  const theme = state
   const onChangeCallback = (text: string) => {
-    dispatch(changeThemeC(text));
+    setState(text);
   }
 
-  return (
+   return (
     <div className={s[theme]}>
       <hr/>
       <span className={s[theme + '-text']}>
@@ -34,5 +38,3 @@ function HW12() {
     </div>
   );
 }
-
-export default HW12;
