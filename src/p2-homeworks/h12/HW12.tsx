@@ -3,13 +3,14 @@ import s from "./HW12.module.css";
 import SuperRadio from "../h7/common/c6-SuperRadio/SuperRadio";
 import SuperSelect from "../h7/common/c5-SuperSelect/SuperSelect";
 import {useDispatch, useSelector} from "react-redux";
-import {changeThemeC} from "./bll/themeReducer";
+import {changeThemeC, InitStateType} from "./bll/themeReducer";
+import {AppStoreType} from "../h10/bll/store";
 
 const themes = ['dark', 'red', 'some'];
 
 function HW12() {
   const dispatch = useDispatch();
-  const theme = useSelector<any, any>(state => state.themeState.theme);
+  const theme = useSelector<AppStoreType, string>(state => state.themeState.theme);
   const onChangeCallback = (text: string) => {
     dispatch(changeThemeC(text));
   }

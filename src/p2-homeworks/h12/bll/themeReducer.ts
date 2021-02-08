@@ -4,7 +4,7 @@ type ActionType = {
   type: 'CHANGE-COLOR'
   text: string
 }
-type InitStateType = {
+export type InitStateType = {
   theme: string
 }
 const initState = {
